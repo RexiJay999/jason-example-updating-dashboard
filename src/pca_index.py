@@ -35,6 +35,10 @@ def transform_series(df):
         df["10-Year Treasury"]
         - df["10-Year Treasury"].rolling(90, min_periods=1).mean()
     )
+    dfn["2-Year Treasury (transformed)"] = (
+        df["2-Year Treasury"]
+        - df["2-Year Treasury"].rolling(90, min_periods=1).mean()
+    )
     # 'VIX': Leave as is
     # Drop columns that are completely NaN
     dfn = dfn.dropna(axis=1, how="all")
