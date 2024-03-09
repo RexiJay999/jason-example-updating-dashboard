@@ -130,7 +130,7 @@ def pc1_line_plot(pc1):
 
     data = [trace]
     layout = dict(
-        title="First Principal Component (PC1)",
+        title="Random Walk with Drift",
         xaxis=dict(
             rangeselector=dict(
                 buttons=list(
@@ -171,7 +171,7 @@ def plot_unnormalized_series(df):
 
     data = [trace]
     layout = dict(
-        title="Raw Economic Series",
+        title="Adjusted Economic Series",
         autosize=True,
         xaxis=dict(
             rangeselector=dict(
