@@ -164,6 +164,7 @@ def plot_unnormalized_series(df):
         "10-Year Treasury",
         "10Y-2Y Spread",
         "VIX",
+        "GDP",
     ]
 
     # Assume dfn is your dataframe and has the series_names as columns
@@ -216,6 +217,7 @@ def plot_normalized_series(dfn):
         "CP - Treasury Spread, 3m",
         "NASDAQ Ret (transformed)",
         "10-Year Treasury (transformed)",
+        "GDP",
     ]
 
     # Assume dfn is your dataframe and has the series_names as columns
